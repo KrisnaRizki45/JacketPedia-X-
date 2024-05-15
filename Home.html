@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JacketPedia</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!--NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">JaketPedia</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto ">
+              <li class="nav-item">
+                <a class="nav-link" href="Home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="instagram.com/krisna_rizki_">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <i class="fa fa-search"></i>
+                <a href="keranjang.html"><i class="fa fa-shopping-cart"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <h5><b>PRODUK TERBARU</b></h5>
+            <h1><span>Jaket Terviral</span> Saat Ini    </h1>
+            <p v-html="TawaranText"></p>
+            <button v-once>{{ buyButtonText }}</button>
+        </div>
+    </section>
+
+    <section id="featured" class="my-10 pb-10">
+      <div class="container text-center mt-5 py-5">
+        <h3>Produk Kami</h3>
+        <hr class="mx-auto">
+        <p>check out produk terbaru kami sekarang agar kamu dapat promo</p>
+      </div>
+      <div class="row mx-auto container-fluid">
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+          <img class="img-fluid mb-2" src="img/shortdenim.png">
+          <div class="star">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h5 class="p-name">Short Denim Jacket</h5>
+          <h4 class="p-price">Rp 799.900</h4>
+          <p>stok : 0</p>
+          <a href="DetailProduk3.html"><button class="buy-btn">Beli Sekarang</button></a> 
+        </div>
+        <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-2" src="img/colareddenim.png">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Brog Collared Denim Jacket</h5>
+            <h4 class="p-price">Rp 1.299.000</h4>
+            <p>stok : 0</p>
+            <a href="DetailProduk2.html"><button class="buy-btn">Beli Sekarang</button></a>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-2" src="img/denimjacket.png">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Regular Denim Jacket</h5>
+            <h4 class="p-price">Rp 499.900</h4>
+            <p>stok : 5</p>
+            <a href="DetailProduk1.html"><button class="buy-btn">Beli Sekarang</button></a>
+          </div>
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-2" src="img/denimshacket.png">
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h5 class="p-name">Denim Shacket</h5>
+            <h4 class="p-price">Rp 225.000</h4>
+            <p>stok : 0</p>
+            <a href="DetailProduk4.html"><button class="buy-btn">Beli Sekarang</button></a>
+          </div>
+      </div>
+    </section>
+
+    <script>
+        var app = new Vue({
+            el: '#home',
+            data: {
+                TawaranText: 'Berbagai jaket kekinian yang mungkin kamu<br>cari ada disini loh!',
+                buyButtonText: 'Beli Sekarang'
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
